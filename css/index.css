@@ -1,0 +1,283 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: #000000;
+}
+
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("../images/menu-bar-icon.png");
+}
+
+.custom-toggler.navbar-toggler {
+  border-color: #f58a22;
+}
+
+.custom-toggler.navbar-toggler:focus {
+  box-shadow: none;
+  box-shadow: 0px 0px 4px #ffab56;
+}
+
+.border-orange {
+  width: 100px;
+  height: 3px;
+  background-color: #f58a22;
+}
+
+/* logo and quick links START */
+.top-quick-links .btn {
+  background-color: #f2f5f7;
+  border-color: #f2f5f7;
+  color: #386aa6;
+  box-shadow: 1px 1px 3px #c6c6c6;
+}
+
+.top-quick-links .btn:hover {
+  color: #0075ff;
+  box-shadow: none;
+}
+
+.top-quick-links .btn .fa-whatsapp {
+  font-weight: bold;
+  font-size: 19px;
+}
+
+.top-quick-links .btn.btn-blue {
+  background-color: #0075ff;
+  border-color: #0075ff;
+  color: #fff;
+  font-weight: 500;
+  box-shadow: 1px 1px 3px #0075ff;
+}
+
+.top-quick-links .btn.btn-blue:hover {
+  box-shadow: none;
+}
+
+.top-header .btn.btn-sign-in {
+  border-color: #f58a22;
+  color: #f58a22;
+  font-weight: 500;
+  transition: all 0.25s ease;
+}
+
+.top-header .btn.btn-sign-in:hover {
+  color: #ffffff;
+  border-color: #f58a22;
+  background-color: #f58a22;
+  transition: all 0.25s ease;
+}
+
+.navbar-bg-color {
+  background-color: #2a45a1;
+}
+
+.navbar ul.navbar-nav li {
+  margin-right: 10px;
+}
+
+.navbar ul.navbar-nav li a.nav-link {
+  color: #ffffff;
+  transition: all 0.25s ease;
+}
+
+.navbar ul.navbar-nav li a.nav-link.active,
+.navbar ul.navbar-nav li a.nav-link:hover {
+  color: #f58a22;
+  border-bottom: 1px solid #f58a22;
+  transition: all 0.25s ease;
+}
+
+.navbar .right-block .btn.btn-w-bg {
+  background-color: #ffffff;
+  border-color: #ffffff;
+  color: #2a45a1;
+  font-weight: 500;
+  box-shadow: 1px 1px 3px #f2f5f7;
+  transition: all 0.25s ease;
+}
+
+.navbar .right-block .btn.btn-w-bg:hover {
+  background-color: #f2f5f7;
+  border-color: #f2f5f7;
+  box-shadow: none;
+  transition: all 0.25s ease;
+}
+
+.navbar .right-block .btn.btn-wo-bg {
+  border-color: #ffffff;
+  color: #ffffff;
+  font-weight: 500;
+  box-shadow: 1px 1px 1px #a2a3a4;
+  transition: all 0.25s ease;
+}
+
+.navbar .right-block .btn.btn-wo-bg:hover {
+  background-color: #f2f5f7;
+  border-color: #f2f5f7;
+  color: #2a45a1;
+  box-shadow: none;
+  transition: all 0.25s ease;
+}
+
+.navbar .right-block .btn.btn-sign-in {
+  border-color: transparent;
+  color: #ffffff;
+  font-weight: 500;
+  transition: all 0.25s ease;
+}
+
+.navbar .right-block .btn.btn-sign-in:hover {
+  color: #f58a22;
+  border-color: #f58a22;
+  transition: all 0.25s ease;
+}
+/* logo and quick links END */
+
+/* hero section START */
+.hero-section {
+  background-image: url("../images/home/hero-banner.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+}
+
+.hero-section h1,
+.hero-section h3 {
+  color: #ffffff;
+}
+
+.hero-section .btn.btn-get-started {
+  background-color: #f58a22;
+  border-color: #f58a22;
+  color: #ffffff;
+  font-weight: 500;
+  box-shadow: 1px 1px 3px #ff8000;
+  transition: all 0.25s ease;
+}
+
+.hero-section .btn.btn-get-started:hover {
+  box-shadow: none;
+  transition: all 0.25s ease;
+}
+/* hero section END */
+
+/* why us section START */
+.why-us-section {
+  background-color: #f5fbff;
+}
+
+.why-us-section p i {
+  color: #f58a22;
+}
+
+.why-us-section .block {
+  background-color: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 8px;
+  box-shadow: 1px 1px 3px #a4a4a4;
+}
+/* why us section END */
+
+/* hiring model section START */
+.hiring-model-section .block {
+  border: 1px solid #c7c7c7;
+  border-radius: 8px;
+  box-shadow: 1px 1px 3px #c7c7c7;
+  transition: all 0.25s ease;
+}
+
+.hiring-model-section .block h3 {
+  background-color: #f2f5f7;
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+  transition: all 0.25s ease;
+}
+
+.hiring-model-section .block .btn.btn-get-in-touch {
+  background-color: #ffffff;
+  border-color: #0075ff;
+  color: #0075ff;
+  font-weight: 500;
+  box-shadow: 1px 1px 3px #a7d0ff;
+  transition: all 0.25s ease;
+}
+
+.hiring-model-section .block hr {
+  color: #ddeffd;
+  padding: 2px 0;
+}
+
+.hiring-model-section .block a.terms-and-cond {
+  color: #000000;
+}
+
+.hiring-model-section .block p i {
+  color: #0075ff;
+}
+
+.hiring-model-section .block:hover {
+  border-color: #0075ff;
+  box-shadow: 1px 1px 3px #a1caf9;
+  transition: all 0.25s ease;
+}
+
+.hiring-model-section .block:hover h3 {
+  background-color: #d4ecff;
+  transition: all 0.25s ease;
+}
+
+.hiring-model-section .block:hover .btn.btn-get-in-touch:hover {
+  background-color: #0075ff;
+  color: #ffffff;
+  box-shadow: none;
+  transition: all 0.25s ease;
+}
+
+.hiring-model-section .block:hover a.terms-and-cond:hover {
+  color: #f58a22;
+  transition: all 0.25s ease;
+}
+/* hiring model section END */
+
+/* our clients section START */
+.our-clients-section {
+  background-color: #ecf2fb;
+}
+
+.our-clients-section h1 {
+  color: #0075ff;
+}
+
+.our-clients-section .image-block {
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 1px 1px 3px #c6c6c6;
+}
+
+.our-clients-section .image-block img {
+  width: 100%;
+}
+/* our clients section END */
+
+/* footer section START */
+.footer-section a {
+  color: #555555;
+  transition: all 0.25s ease;
+}
+
+.footer-section a:hover {
+  color: #0075ff;
+  transition: all 0.25s ease;
+}
+
+.footer-section a.icon i {
+  font-size: 25px;
+}
+/* footer section END */
