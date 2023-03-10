@@ -315,8 +315,13 @@ body {
 /* our clients section END */
 
 /* footer section START */
+.footer-section {
+  background-color: #24272c;
+  color: #ffffff;
+}
+
 .footer-section a {
-  color: #555555;
+  color: #ffffff;
   transition: all 0.25s ease;
 }
 
