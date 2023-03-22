@@ -63,9 +63,7 @@
             target="_blank"
             ><i class="fa-solid fa-envelope"></i
           ></a>
-          <a class="btn btn-blue" href="./contact-us.html" role="button"
-            >Get In Touch</a
-          >
+          <a class="btn btn-blue" href="#contact" role="button">Get In Touch</a>
         </div>
 
         <a class="btn btn-sign-in" href="#" role="button">Recruiters Login</a>
@@ -75,8 +73,8 @@
         <nav class="navbar navbar-expand-lg">
           <div class="container">
             <div class="logo-block">
-              <a class="navbar-brand" href="./index.html">
-                <img class="logo" src="" alt="HireSlick" />
+              <a class="navbar-brand" href="./">
+                <img class="logo" src="./images/logo.png" alt="HireSlick" />
               </a>
             </div>
 
@@ -94,10 +92,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                  <a
-                    class="nav-link active"
-                    aria-current="page"
-                    href="./index.html"
+                  <a class="nav-link active" aria-current="page" href="#home"
                     >Home</a
                   >
                 </li>
@@ -108,7 +103,10 @@
                   <a class="nav-link" href="#why-us">Why Us</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Pricing</a>
+                  <a class="nav-link" href="#pricing">Pricing</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#contact">Contact</a>
                 </li>
               </ul>
               <div class="right-block">
@@ -160,6 +158,7 @@
 
     <!-- hero section START -->
     <section
+      id="home"
       class="hero-section container-fluid pb-5"
       style="overflow-x: hidden"
     >
@@ -395,7 +394,7 @@
     <!-- why us section END -->
 
     <!-- hiring model section START -->
-    <section class="hiring-model-section my-5 py-5">
+    <section id="pricing" class="hiring-model-section my-5 py-5">
       <div class="container">
         <h1 class="text-center fw-bold section-heading mt-5">Hiring Model</h1>
         <div class="border-white mx-auto mb-3"></div>
@@ -904,14 +903,115 @@
     </section>
     <!-- our clients section END -->
 
+    <!-- why us section START -->
+    <section
+      id="contact"
+      class="contact-section my-5 py-5"
+      style="overflow-x: hidden; overflow-y: hidden"
+    >
+      <div class="container">
+        <div class="contact-block py-1 py-sm-5 px-3 px-sm-5">
+          <div class="row">
+            <div
+              class="col-lg-4 get-in-touch-block p-5"
+              data-aos="fade-right"
+              data-aos-duration="1000"
+            >
+              <h1 class="fw-bold">Get In Touch</h1>
+              <div class="border-white mb-4"></div>
+
+              <a
+                class="text-decoration-none d-block mb-2"
+                href="tel:+6587993124"
+                role="button"
+                target="_blank"
+                ><i class="fa-solid fa-phone me-2"></i>+6587993124</a
+              >
+              <a
+                class="text-decoration-none d-block mb-2"
+                href="mailto:sales@buildnetic.com"
+                role="button"
+                target="_blank"
+                ><i class="fa-solid fa-envelope me-2"></i
+                >support@hireslick.com</a
+              >
+
+              <img
+                src="./images/home/contact.png"
+                alt="Contact"
+                class="img-fluid pt-4"
+              />
+            </div>
+            <div class="col-lg-8 send-msg-block py-5 px-3 px-sm-5">
+              <h3 class="section-heading">Send Message</h3>
+              <div class="border-blue mb-4"></div>
+              <form method="post">
+                <div class="row">
+                  <div class="col-md-6">
+                    <input
+                      type="text"
+                      name="firstName"
+                      class="form-control"
+                      placeholder="First Name"
+                    />
+                  </div>
+                  <div class="col-md-6 mt-3 mt-md-0">
+                    <input
+                      type="text"
+                      name="lastName"
+                      class="form-control"
+                      placeholder="Last Name"
+                    />
+                  </div>
+                  <div class="col-md-6 mt-3">
+                    <input
+                      type="email"
+                      name="email"
+                      class="form-control"
+                      placeholder="Email Id"
+                    />
+                  </div>
+                  <div class="col-md-6 mt-3">
+                    <input
+                      type="text"
+                      name="mobile"
+                      class="form-control"
+                      placeholder="Mobile Number"
+                    />
+                  </div>
+                  <div class="col-md-12 mt-3">
+                    <textarea
+                      class="form-control"
+                      rows="3"
+                      placeholder="Enter Your Message here..."
+                    ></textarea>
+                  </div>
+                  <div class="col-md-12 mt-4">
+                    <a class="btn btn-submit d-block" href="#" role="button"
+                      >Submit</a
+                    >
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- why us section END -->
+
     <!-- footer section START -->
     <footer class="footer-section py-5 pb-sm-0">
       <div class="container">
         <div class="row">
           <div class="col-12 col-sm-6 col-lg-3">
             <div class="logo-block mb-4">
-              <a href="/index.html" class="text-decoration-none">
-                <img src="" alt="HireSlick" class="img-fluid" />
+              <a href="./" class="text-decoration-none">
+                <img
+                  src="./images/logo-white.png"
+                  alt="HireSlick"
+                  class="img-fluid footer-logo"
+                />
               </a>
             </div>
             <!-- <h5>About Us</h5> -->
