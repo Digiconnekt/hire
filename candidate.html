@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HireSlick - Candidate</title>
+    <!-- favicon link -->
+    <link rel="shortcut icon" href="" type="image/x-icon" />
+
+    <!-- BOOTSTRAP CSS LINK START -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!-- BOOTSTRAP CSS LINK END -->
+
+    <!-- FONTAWESOME LINK START -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- FONTAWESOME LINK END -->
+
+    <!-- ANIMATE ON SCROLL AOS CSS LINK START -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- ANIMATE ON SCROLL AOS CSS LINK END -->
+
+    <!-- CUSTOM CSS LINK FOR INDEX PAGE START -->
+    <link rel="stylesheet" href="./css/index.css" />
+    <!-- CUSTOM CSS LINK FOR INDEX PAGE END -->
+
+    <!-- CUSTOM CSS LINK FOR candidate PAGE START -->
+    <link rel="stylesheet" href="./css/candidate.css" />
+    <!-- CUSTOM CSS LINK FOR candidate PAGE END -->
+  </head>
+  <body>
+    <!-- quick links + header START -->
+    <div class="links-plus-header">
+      <div
+        class="container top-header d-flex justify-content-between align-items-center py-2"
+      >
+        <div class="top-quick-links my-1">
+          <a
+            class="btn me-2 d-none d-sm-inline-block"
+            href="tel:+6587993124"
+            role="button"
+            target="_blank"
+            ><i class="fa-solid fa-phone"></i
+          ></a>
+          <a
+            class="btn me-2 d-none d-sm-inline-block"
+            href="https://wa.me/+918595334605 "
+            role="button"
+            target="_blank"
+            ><i class="fa-brands fa-whatsapp"></i
+          ></a>
+          <a
+            class="btn me-2 d-none d-sm-inline-block"
+            href="mailto:sales@buildnetic.com"
+            role="button"
+            target="_blank"
+            ><i class="fa-solid fa-envelope"></i
+          ></a>
+          <a class="btn btn-blue" href="#contact" role="button">Get In Touch</a>
+        </div>
+
+        <a
+          class="btn btn-sign-in"
+          target="_blank"
+          href="https://recruiter.hireslick.com/"
+          role="button"
+          >Recruiters Login</a
+        >
+      </div>
+
+      <div class="container-fluid navbar-bg-color py-3">
+        <nav class="navbar navbar-expand-lg">
+          <div class="container">
+            <div class="logo-block">
+              <a class="navbar-brand" href="./">
+                <img class="logo" src="./images/logo.png" alt="HireSlick" />
+              </a>
+            </div>
+
+            <button
+              class="navbar-toggler custom-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#home"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#how-it-works">How It Works</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#why-us">Why Us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#pricing">Pricing</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#contact">Contact</a>
+                </li>
+              </ul>
+              <div class="right-block">
+                <a
+                  class="btn btn-w-bg me-sm-3 d-block d-sm-inline-block"
+                  href="#"
+                  role="button"
+                  >Submit Your Resume</a
+                >
+                <a
+                  class="btn btn-wo-bg d-block d-sm-inline-block mt-3 mt-sm-0"
+                  href="https://recruiter.hireslick.com"
+                  target="_blank"
+                  role="button"
+                  >Post a Free Job</a
+                >
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <!-- quick links + header END -->
+
+    <!-- quick links (at footer -- only for small device) START -->
+    <div
+      class="mobile-fixed-quick-links w-100 d-sm-none position-fixed bottom-0"
+    >
+      <div class="d-flex justify-content-around align-items-center py-2">
+        <a class="" href="tel:+6587993124" role="button" target="_blank"
+          ><i class="fa-solid fa-phone"></i
+        ></a>
+        <a
+          class=""
+          href="https://wa.me/+918595334605 "
+          role="button"
+          target="_blank"
+          ><i class="fa-brands fa-whatsapp fw-bold"></i
+        ></a>
+        <a
+          class=""
+          href="mailto:sales@buildnetic.com"
+          role="button"
+          target="_blank"
+          ><i class="fa-solid fa-envelope"></i
+        ></a>
+      </div>
+    </div>
+    <!-- quick links (at footer -- only for small device) END -->
+
+    <!--------- main content start --------->
+    <main>
+      <!---- about me start ---->
+      <section class="container my-5" style="overflow: hidden">
+        <div class="row align-items-center">
+          <div class="col-lg-6" data-aos="fade-right" data-aos-duration="1000">
+            <div style="max-width: 400px; height: 400px; margin: 0 auto">
+              <img
+                src="https://t4.ftcdn.net/jpg/03/64/21/11/360_F_364211147_1qgLVxv1Tcq0Ohz3FawUfrtONzz8nq3e.jpg"
+                alt=""
+                class="img-fluid"
+                style="
+                  height: 100%;
+                  object-fit: cover;
+                  border-radius: 5px;
+                  box-shadow: 0px 0px 10px #e5e5e5;
+                "
+              />
+            </div>
+          </div>
+          <div class="col-lg-6" data-aos="fade-left" data-aos-duration="1000">
+            <div class="d-flex align-items-center justify-content-between">
+              <h3 class="section-heading">John Doe</h3>
+              <h6>- Fullstack Developer</h6>
+            </div>
+            <div
+              class="bg-color-c-primary mx-auto mb-3"
+              style="height: 2px"
+            ></div>
+            <p class="fw-light text-align-justify">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Doloribus vel porro aliquid saepe quidem quis sed suscipit!
+              Obcaecati ipsum maxime nam assumenda repellat aut perspiciatis.
+              Culpa optio nostrum perspiciatis delectus laboriosam, sequi
+              distinctio labore aliquid maiores omnis asperiores recusandae sed
+              consequatur ratione. Eligendi quos itaque mollitia iusto explicabo
+              beatae iste animi non at.
+            </p>
+            <ul class="ps-0">
+              <li class="row mb-2" data-aos="fade-up" data-aos-duration="2000">
+                <div class="col-4">
+                  <i class="fas fa-briefcase color-c-primary"></i>
+                  <span class="ms-1 color-c-primary">Experience</span>
+                </div>
+                <div class="col-1">:</div>
+                <div class="col-7">5+ Years</div>
+              </li>
+              <li class="row mb-2" data-aos="fade-up" data-aos-duration="2000">
+                <div class="col-4">
+                  <i class="fas fa-graduation-cap color-c-primary"></i>
+                  <span class="ms-1 color-c-primary">Qualification</span>
+                </div>
+                <div class="col-1">:</div>
+                <div class="col-7">B.Tech Computer Engg</div>
+              </li>
+              <li class="row mb-2" data-aos="fade-up" data-aos-duration="2000">
+                <div class="col-4">
+                  <i class="fas fa-language color-c-primary"></i>
+                  <span class="ms-1 color-c-primary">Languages</span>
+                </div>
+                <div class="col-1">:</div>
+                <div class="col-7">English, Hindi, Marathi</div>
+              </li>
+              <li class="row mb-2" data-aos="fade-up" data-aos-duration="2000">
+                <div class="col-4">
+                  <i class="fas fa-tasks color-c-primary"></i>
+                  <span class="ms-1 color-c-primary">Skills</span>
+                </div>
+                <div class="col-1">:</div>
+                <div class="col-7">5</div>
+              </li>
+              <li class="row mb-2" data-aos="fade-up" data-aos-duration="2000">
+                <div class="col-4">
+                  <i class="fas fa-trophy color-c-primary"></i>
+                  <span class="ms-1 color-c-primary">Achievement</span>
+                </div>
+                <div class="col-1">:</div>
+                <div class="col-7">8</div>
+              </li>
+              <li class="row mb-2" data-aos="fade-up" data-aos-duration="2000">
+                <div class="col-4">
+                  <i class="fas fa-link color-c-primary"></i>
+                  <span class="ms-1 color-c-primary">References</span>
+                </div>
+                <div class="col-1">:</div>
+                <div class="col-7">2</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!---- about me end ---->
+
+      <!---- Experiences start ---->
+      <section class="container py-5 my-5" style="overflow: hidden">
+        <h2 class="fw-bold color-c-primary text-center">
+          <i class="fas fa-briefcase color-c-primary me-3"></i>Experiences
+        </h2>
+        <div class="border-blue mx-auto mb-3"></div>
+
+        <ul class="mt-5 experiences-container">
+          <li class="row mb-4">
+            <div class="col-6" data-aos="fade-up" data-aos-duration="1000">
+              <h5>Fullstack Developer</h5>
+              <p class="color-c-gray-light">
+                <i class="fas fa-building me-1 color-c-gray-light"></i>
+                Buildnetc Pvt Ltd
+              </p>
+            </div>
+            <div class="col-6" data-aos="fade-left" data-aos-duration="1000">
+              <p class="text-end color-c-gray-light">
+                <i class="fas fa-calendar-alt me-1"></i> Jun 2020 - Jun 2023
+                <span>(2 Years)</span>
+              </p>
+            </div>
+            <div class="col-12" data-aos="fade-up" data-aos-duration="1000">
+              <p class="">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa
+                ab molestiae voluptate ad explicabo, dolores doloremque culpa
+                deleniti, temporibus quos tempora cum voluptatem eveniet
+                reprehenderit mollitia commodi, eligendi saepe consequatur!
+              </p>
+            </div>
+          </li>
+          <li class="row mb-4">
+            <div class="col-6" data-aos="fade-up" data-aos-duration="1000">
+              <h5>Fullstack Developer</h5>
+              <p class="color-c-gray-light">
+                <i class="fas fa-building me-1"></i> Buildnetc Pvt Ltd
+              </p>
+            </div>
+            <div class="col-6" data-aos="fade-left" data-aos-duration="1000">
+              <p class="text-end color-c-gray-light">
+                <i class="fas fa-calendar-alt me-1"></i> Jun 2020 - Jun 2023
+                <span>(2 Years)</span>
+              </p>
+            </div>
+            <div class="col-12" data-aos="fade-up" data-aos-duration="1000">
+              <p class="">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa
+                ab molestiae voluptate ad explicabo, dolores doloremque culpa
+                deleniti, temporibus quos tempora cum voluptatem eveniet
+                reprehenderit mollitia commodi, eligendi saepe consequatur!
+              </p>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <!---- Experiences end ---->
+
+      <!---- skills start ---->
+      <section class="bg-color-c-black-light py-5 my-5">
+        <div class="container">
+          <h2 class="fw-bold color-c-primary text-center">
+            <i class="fas fa-tasks color-c-primary me-3"></i> Skills
+          </h2>
+          <div class="border-blue mx-auto mb-3"></div>
+
+          <ul
+            class="row justify-content-between ps-0 mt-5"
+            style="list-style-type: none"
+          >
+            <li class="col-5 mb-4">
+              <div class="d-flex align-items-center justify-content-between">
+                <p>HTML</p>
+                <p>90%</p>
+              </div>
+              <div class="progress">
+                <div
+                  class="progress-bar"
+                  role="progressbar"
+                  style="width: 90%"
+                  aria-valuenow="90"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
+            </li>
+            <li class="col-5 mb-4">
+              <div class="d-flex align-items-center justify-content-between">
+                <p>CSS</p>
+                <p>80%</p>
+              </div>
+              <div class="progress">
+                <div
+                  class="progress-bar"
+                  role="progressbar"
+                  style="width: 80%"
+                  aria-valuenow="80"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
+            </li>
+            <li class="col-5 mb-4">
+              <div class="d-flex align-items-center justify-content-between">
+                <p>Javascript</p>
+                <p>70%</p>
+              </div>
+              <div class="progress">
+                <div
+                  class="progress-bar"
+                  role="progressbar"
+                  style="width: 70%"
+                  aria-valuenow="70"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
+            </li>
+            <li class="col-5 mb-4">
+              <div class="d-flex align-items-center justify-content-between">
+                <p>Tailwind</p>
+                <p>75%</p>
+              </div>
+              <div class="progress">
+                <div
+                  class="progress-bar"
+                  role="progressbar"
+                  style="width: 75%"
+                  aria-valuenow="75"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
+            </li>
+            <li class="col-5 mb-4">
+              <div class="d-flex align-items-center justify-content-between">
+                <p>Angular</p>
+                <p>50%</p>
+              </div>
+              <div class="progress">
+                <div
+                  class="progress-bar"
+                  role="progressbar"
+                  style="width: 50%"
+                  aria-valuenow="50"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
+            </li>
+            <li class="col-5 mb-4">
+              <div class="d-flex align-items-center justify-content-between">
+                <p>React</p>
+                <p>100%</p>
+              </div>
+              <div class="progress">
+                <div
+                  class="progress-bar"
+                  role="progressbar"
+                  style="width: 100%"
+                  aria-valuenow="100"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!---- skills end ---->
+
+      <!---- qualification start ---->
+      <section class="container py-5 my-5" style="overflow: hidden">
+        <h2 class="fw-bold color-c-primary text-center">
+          <i class="fas fa-graduation-cap color-c-primary me-3"></i
+          >Qualifications
+        </h2>
+        <div class="border-blue mx-auto mb-3"></div>
+
+        <ul class="mt-5 qualification-container">
+          <li class="row mb-4">
+            <div class="col-6" data-aos="fade-up" data-aos-duration="1000">
+              <h5>Bachleor of Engineering</h5>
+              <p class="color-c-gray-light">
+                <i class="fas fa-university me-1"></i>Mumbai University
+              </p>
+            </div>
+            <div class="col-6" data-aos="fade-left" data-aos-duration="1000">
+              <p class="text-end color-c-gray-light">
+                <i class="fas fa-calendar-alt me-1"></i> Jun 2020 - Jun 2023
+              </p>
+            </div>
+            <div class="col-12" data-aos="fade-up" data-aos-duration="1000">
+              <p class="">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa
+                ab molestiae voluptate ad explicabo, dolores doloremque culpa
+                deleniti, temporibus quos tempora cum voluptatem eveniet
+                reprehenderit mollitia commodi, eligendi saepe consequatur!
+              </p>
+            </div>
+          </li>
+          <li class="row mb-4">
+            <div class="col-6" data-aos="fade-up" data-aos-duration="1000">
+              <h5>Bachleor of Engineering</h5>
+              <p class="color-c-gray-light">
+                <i class="fas fa-university me-1"></i>Mumbai University
+              </p>
+            </div>
+            <div class="col-6" data-aos="fade-left" data-aos-duration="1000">
+              <p class="text-end color-c-gray-light">
+                <i class="fas fa-calendar-alt me-1"></i> Jun 2020 - Jun 2023
+              </p>
+            </div>
+            <div class="col-12" data-aos="fade-up" data-aos-duration="1000">
+              <p class="">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa
+                ab molestiae voluptate ad explicabo, dolores doloremque culpa
+                deleniti, temporibus quos tempora cum voluptatem eveniet
+                reprehenderit mollitia commodi, eligendi saepe consequatur!
+              </p>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <!---- qualification end ---->
+
+      <!---- achievement start ---->
+      <section
+        class="bg-color-c-black-light py-5 mt-5"
+        style="overflow: hidden"
+      >
+        <div class="container">
+          <h2 class="fw-bold color-c-primary text-center">Achievements</h2>
+          <div class="border-blue mx-auto mb-3"></div>
+
+          <div class="row align-items-center mt-5 pt-4">
+            <div
+              class="col-4 position-relative"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
+              <div class="achievement-card p-5">
+                <h5>University Topper</h5>
+                <div
+                  class="d-flex justify-content-between align-items-center color-c-gray-light"
+                >
+                  <p>Mumbai</p>
+                  <p><i class="fas fa-calendar-alt me-1"></i> 28 Jun 2023</p>
+                </div>
+                <p class="mb-0 text-align-justify">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Officia, voluptatem recusandae.
+                </p>
+              </div>
+              <div class="achievement-icon">
+                <i class="fas fa-trophy color-c-primary"></i>
+              </div>
+            </div>
+            <div
+              class="col-4 position-relative"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
+              <div class="achievement-card p-5">
+                <h5>University Topper</h5>
+                <div
+                  class="d-flex justify-content-between align-items-center color-c-gray-light"
+                >
+                  <p>Mumbai</p>
+                  <p><i class="fas fa-calendar-alt me-1"></i> 28 Jun 2023</p>
+                </div>
+                <p class="mb-0 text-align-justify">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Officia, voluptatem recusandae.
+                </p>
+              </div>
+              <div class="achievement-icon">
+                <i class="fas fa-trophy color-c-primary"></i>
+              </div>
+            </div>
+            <div
+              class="col-4 position-relative"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
+              <div class="achievement-card p-5">
+                <h5>University Topper</h5>
+                <div
+                  class="d-flex justify-content-between align-items-center color-c-gray-light"
+                >
+                  <p>Mumbai</p>
+                  <p><i class="fas fa-calendar-alt me-1"></i> 28 Jun 2023</p>
+                </div>
+                <p class="mb-0 text-align-justify">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Officia, voluptatem recusandae.
+                </p>
+              </div>
+              <div class="achievement-icon">
+                <i class="fas fa-trophy color-c-primary"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!---- achievement end ---->
+    </main>
+    <!--------- main content end --------->
+
+    <!-- footer section START -->
+    <footer class="footer-section py-5 pb-sm-0">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="logo-block mb-4">
+              <a href="./" class="text-decoration-none">
+                <img
+                  src="./images/logo-white.png"
+                  alt="HireSlick"
+                  class="img-fluid footer-logo"
+                />
+              </a>
+            </div>
+            <!-- <h5>About Us</h5> -->
+            <p>
+              We are hiring geeks on a mission to provide resources on an
+              immediate basis with no delay in hiring.
+            </p>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-3 mt-4 mt-lg-0">
+            <h5 class="">Contact Us</h5>
+            <div class="border-black mb-4"></div>
+            <a
+              class="text-decoration-none d-block mb-2"
+              href="mailto:sales@buildnetic.com"
+              role="button"
+              target="_blank"
+              ><i class="fa-solid fa-envelope me-2"></i>support@hireslick.com</a
+            >
+            <a
+              class="text-decoration-none d-block"
+              href="tel:+6587993124"
+              role="button"
+              target="_blank"
+              ><i class="fa-solid fa-phone me-2"></i>+6587993124</a
+            >
+          </div>
+          <div class="col-12 col-sm-6 col-lg-3 mt-4 mt-lg-0">
+            <h5 class="">Support</h5>
+            <div class="border-black mb-4"></div>
+            <a href="#" class="text-decoration-none d-block mb-2"
+              >Privacy Policy</a
+            >
+            <a href="#" class="text-decoration-none d-block">Terms of Use</a>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-3 mt-4 mt-lg-0">
+            <h5 class="">Connect</h5>
+            <div class="border-black mb-4"></div>
+            <a href="#" class="text-decoration-none icon me-3"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+            <a href="#" class="text-decoration-none icon me-3"
+              ><i class="fa-brands fa-twitter"></i
+            ></a>
+            <a href="#" class="text-decoration-none icon me-3"
+              ><i class="fa-brands fa-square-facebook"></i
+            ></a>
+            <a href="#" class="text-decoration-none icon me-3"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+
+      <hr class="mt-5" />
+
+      <p class="text-center px-2 pb-3 mb-0">
+        Copyright &copy; India rights @ Arunarcis Solutions Pvt Ltd, Singapore
+        rights @ Macaire Solutions Pte Ltd.
+      </p>
+    </footer>
+    <!-- footer section END -->
+
+    <!-- BOOTSTRAP JS LINK START -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <!-- BOOTSTRAP JS LINK END -->
+
+    <!-- ANIMATE ON SCROLL AOS JS LINK START -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 200,
+      });
+    </script>
+    <!-- ANIMATE ON SCROLL AOS JS LINK END -->
+
+    <!-- CUSTOM JS LINK START -->
+    <script src="./js/index.js"></script>
+    <!-- CUSTOM JS LINK END -->
+  </body>
+</html>

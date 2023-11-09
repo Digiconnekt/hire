@@ -1,0 +1,64 @@
+.color-c-primary {
+  color: #0075ff;
+}
+
+.bg-color-c-primary {
+  background-color: #0075ff;
+}
+
+.bg-color-c-black-light {
+  background-color: #f9f9f9;
+}
+
+.color-c-gray-light {
+  color: #878787;
+}
+
+.text-align-justify {
+  text-align: justify;
+}
+
+.progress {
+  height: 10px;
+  border-radius: 20px;
+}
+
+.experiences-container,
+.qualification-container {
+  position: relative;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  border-left: 2px solid #0075ff;
+}
+
+.experiences-container li::before,
+.qualification-container li::before {
+  position: absolute;
+  left: -8px;
+  content: "";
+  width: 14px;
+  height: 14px;
+  background-color: #0075ff;
+  border-radius: 50%;
+}
+
+.achievement-card {
+  border: 1px solid transparent;
+  border-top-right-radius: 70px;
+  box-shadow: 0px 0px 5px #98b9e0;
+}
+
+.achievement-icon {
+  position: absolute;
+  top: -30px;
+  left: 50px;
+  background-color: #0075ff;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.achievement-icon i {
+  font-size: 25px;
+  color: #ffffff;
+}
