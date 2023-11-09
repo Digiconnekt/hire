@@ -334,12 +334,12 @@
                 <p>HTML</p>
                 <p>90%</p>
               </div>
-              <div class="progress">
+              <div class="progress" data-aos="none">
                 <div
                   class="progress-bar"
+                  data-target-value="90"
                   role="progressbar"
-                  style="width: 90%"
-                  aria-valuenow="90"
+                  aria-valuenow="0"
                   aria-valuemin="0"
                   aria-valuemax="100"
                 ></div>
@@ -350,12 +350,12 @@
                 <p>CSS</p>
                 <p>80%</p>
               </div>
-              <div class="progress">
+              <div class="progress" data-aos="none">
                 <div
                   class="progress-bar"
+                  data-target-value="80"
                   role="progressbar"
-                  style="width: 80%"
-                  aria-valuenow="80"
+                  aria-valuenow="0"
                   aria-valuemin="0"
                   aria-valuemax="100"
                 ></div>
@@ -366,12 +366,12 @@
                 <p>Javascript</p>
                 <p>70%</p>
               </div>
-              <div class="progress">
+              <div class="progress" data-aos="none">
                 <div
                   class="progress-bar"
+                  data-target-value="70"
                   role="progressbar"
-                  style="width: 70%"
-                  aria-valuenow="70"
+                  aria-valuenow="0"
                   aria-valuemin="0"
                   aria-valuemax="100"
                 ></div>
@@ -382,12 +382,12 @@
                 <p>Tailwind</p>
                 <p>75%</p>
               </div>
-              <div class="progress">
+              <div class="progress" data-aos="none">
                 <div
                   class="progress-bar"
+                  data-target-value="75"
                   role="progressbar"
-                  style="width: 75%"
-                  aria-valuenow="75"
+                  aria-valuenow="0"
                   aria-valuemin="0"
                   aria-valuemax="100"
                 ></div>
@@ -398,12 +398,12 @@
                 <p>Angular</p>
                 <p>50%</p>
               </div>
-              <div class="progress">
+              <div class="progress" data-aos="none">
                 <div
                   class="progress-bar"
+                  data-target-value="50"
                   role="progressbar"
-                  style="width: 50%"
-                  aria-valuenow="50"
+                  aria-valuenow="0"
                   aria-valuemin="0"
                   aria-valuemax="100"
                 ></div>
@@ -414,12 +414,12 @@
                 <p>React</p>
                 <p>100%</p>
               </div>
-              <div class="progress">
+              <div class="progress" data-aos="none">
                 <div
                   class="progress-bar"
+                  data-target-value="100"
                   role="progressbar"
-                  style="width: 100%"
-                  aria-valuenow="100"
+                  aria-valuenow="0"
                   aria-valuemin="0"
                   aria-valuemax="100"
                 ></div>
@@ -657,6 +657,49 @@
         offset: 200,
       });
     </script>
+
+    <!------------- skills progress bar animation start ---------->
+    <script>
+      // Update the progress bar function
+      function updateProgressBar(progressElement, value) {
+        const progressBar = progressElement.querySelector(".progress-bar");
+        progressBar.style.width = value + "%";
+        progressBar.setAttribute("aria-valuenow", value);
+      }
+
+      // Function to animate the progress bar
+      function animateProgressBar(progressElement, targetValue) {
+        let currentValue = 0;
+        const animationInterval = setInterval(() => {
+          updateProgressBar(progressElement, currentValue);
+          currentValue++;
+
+          if (currentValue > targetValue) {
+            clearInterval(animationInterval);
+          }
+        }, 20); // Adjust the interval for smoother animation
+      }
+
+      // Trigger the progress bar animations when scrolled into view
+      document.addEventListener("aos:in", ({ detail }) => {
+        const progressBars = document.querySelectorAll(".progress");
+
+        progressBars.forEach((progressElement) => {
+          if (detail === progressElement) {
+            const targetValue =
+              parseInt(
+                progressElement
+                  .querySelector(".progress-bar")
+                  .getAttribute("data-target-value"),
+                10
+              ) || 0;
+            animateProgressBar(progressElement, targetValue);
+          }
+        });
+      });
+    </script>
+    <!------------- skills progress bar animation end ---------->
+
     <!-- ANIMATE ON SCROLL AOS JS LINK END -->
 
     <!-- CUSTOM JS LINK START -->
